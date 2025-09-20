@@ -1,0 +1,18 @@
+{
+  "name": "@smm/core",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "dev": "tsc --watch",
+    "lint": "eslint . --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@smm/shared": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
