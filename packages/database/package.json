@@ -1,0 +1,38 @@
+{
+  "name": "@smm/database",
+  "version": "0.0.0",
+  "private": false,
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "description": "SMM Platform Database Package - Supabase integration and types",
+  "license": "MIT",
+  "scripts": {
+    "db:pull": "supabase db pull",
+    "db:push": "supabase db push",
+    "db:diff": "supabase db diff",
+    "db:generate-types": "supabase gen types typescript --project-id=pbnutmoiwykadzkqviay > src/types/database.ts",
+    "db:start": "supabase start",
+    "db:stop": "supabase stop",
+    "db:reset": "supabase db reset",
+    "db:status": "supabase status",
+    "db:studio": "supabase studio"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.123.4",
+    "typescript": "^5.0.0"
+  },
+  "keywords": [
+    "supabase",
+    "database",
+    "typescript",
+    "minigrid",
+    "smm"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/standard-microgrid/smm-opensource.git"
+  }
+}
